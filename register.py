@@ -3,6 +3,7 @@ import os
 import logging
 import yaml
 import boto3
+from botocore.errorfactory import ClientError
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Registers AWS SES templates.')
@@ -37,7 +38,7 @@ def register_template(template, ses_client, logger):
             logger.info(f'Template "{template["name"]}" already exist. Updating...')
             ses_client.update_template(Template = config)
             logger.info(f'...updated')
-    except boto3.botocore.errorfactory.TemplateDoesNotExistException:
+    except ClientError:
         logger.info(f'Template "{template["name"]}" does not exist. Creating...')
         ses_client.create_template(Template=config)
         logger.info(f'...created')
