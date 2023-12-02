@@ -1,0 +1,29 @@
+templates:
+  - name: workshopConfirmationUser
+    subject: Thank you for booking a workshop with Voluntree
+    source: templates/workshopConfirmationUser.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that booked the session
+      - name: HOST_NAME
+        description: Name of the user that is hosting the session
+      - name: DATE
+        description: Session date
+      - name: TIME
+        description: Session time
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
+  - name: workshopConfirmationHost
+    subject: New session booking for your workshop
+    source: templates/workshopConfirmationHost.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that booked the session
+      - name: HOST_NAME
+        description: Name of the user that is hosting the session
+      - name: DATE
+        description: Session date
+      - name: TIME
+        description: Session time
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
