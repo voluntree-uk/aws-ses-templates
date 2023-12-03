@@ -7,9 +7,9 @@ templates:
         description: Name of the user that booked the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
-      - name: DATE
+      - name: EVENT_DATE
         description: Session date
-      - name: TIME
+      - name: EVENT_TIME
         description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
@@ -21,9 +21,9 @@ templates:
         description: Name of the user that booked the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
-      - name: DATE
+      - name: EVENT_DATE
         description: Session date
-      - name: TIME
+      - name: EVENT_TIME
         description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
