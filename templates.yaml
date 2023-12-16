@@ -1,7 +1,21 @@
 templates:
-  - name: workshopConfirmationUser
-    subject: Thank you for booking a workshop with Voluntree
-    source: templates/workshopConfirmationUser.html
+  - name: verifyEmailUser
+    subject: Verify your email to the Voluntree platform
+    source: templates/verifyEmailUser.html
+    data:
+      - name: VERIFY_EMAIL_LINK
+        description: A URL to verify email address
+  - name: workshopCreationConfirmation
+    subject: You have successfuly cancelled a session
+    source: templates/workshopCreationConfirmation.html
+    data:
+      - name: HOST_NAME
+        description: Name of the user that created the workshop
+      - name: EVENT_NAME
+        description: Workshop name
+  - name: bookingConfirmationUser
+    subject: Thank you for booking a session with Voluntree
+    source: templates/bookingConfirmationUser.html
     data:
       - name: USER_NAME
         description: Name of the user that booked the session
@@ -13,9 +27,9 @@ templates:
         description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
-  - name: workshopConfirmationHost
+  - name: bookingConfirmationHost
     subject: New session booking for your workshop
-    source: templates/workshopConfirmationHost.html
+    source: templates/bookingConfirmationHost.html
     data:
       - name: USER_NAME
         description: Name of the user that booked the session
@@ -27,3 +41,39 @@ templates:
         description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
+  - name: bookingCancellationUser
+    subject: Your session has been cancelled
+    source: templates/bookingCancellationUser.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that had their session cancelled
+      - name: HOST_NAME
+        description: Name of the host that cancelled the session
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+  - name: bookingCancellationHost
+    subject: A session was cancelled for your workshop
+    source: templates/bookingCancellationHost.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that cancelled the session
+      - name: HOST_NAME
+        description: Name of the user that is hosting the session
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+  - name: bookingCancellationConfirmation
+    subject: You have successfuly cancelled a session
+    source: templates/bookingCancellationConfirmation.html
+    data:
+      - name: CANCELLING_USER
+        description: Name of the user that cancelled the session
+      - name: OTHER_USER
+        description: Name of the user that had their session cancelled
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
