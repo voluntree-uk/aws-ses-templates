@@ -6,7 +6,7 @@ templates:
       - name: VERIFY_EMAIL_LINK
         description: A URL to verify email address
   - name: workshopCreationConfirmation
-    subject: You have successfuly cancelled a session
+    subject: Thank you for creating a workshop with Voluntree
     source: templates/workshopCreationConfirmation.html
     data:
       - name: HOST_NAME
