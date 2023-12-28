@@ -5,6 +5,12 @@ templates:
     data:
       - name: VERIFY_EMAIL_LINK
         description: A URL to verify email address
+  - name: resetPasswordUser
+    subject: Reset your password for the Voluntree platform
+    source: templates/resetPasswordUser.html
+    data:
+      - name: PASSWORD_RESET_LINK
+        description: A URL to reset password portal
   - name: workshopCreationConfirmation
     subject: Thank you for creating a workshop with Voluntree
     source: templates/workshopCreationConfirmation.html
