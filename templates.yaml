@@ -83,3 +83,25 @@ templates:
         description: Session date
       - name: EVENT_TIME
         description: Session time
+  - name: reviewReminderUser
+    subject: Thank you for attending a session with Voluntree
+    source: templates/reviewReminderUser.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that attended the session
+      - name: HOST_NAME
+        description: Name of the user that hosted the session
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: REVIEW_TARGET
+        description: Link to the review page
+  - name: awardPointsHost
+    subject: Thank you for hosting a workshop with Voluntree
+    source: templates/awardPointsHost.html
+    data:
+      - name: HOST_NAME
+        description: Name of the user that hosted the session
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: AWARD_AMOUNT
+        description: Amount of points awarded
