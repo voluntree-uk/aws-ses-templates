@@ -27,6 +27,8 @@ templates:
         description: Name of the user that booked the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
+      - name: EVENT_NAME
+        description: Workshop name
       - name: EVENT_DATE
         description: Session date
       - name: EVENT_TIME
@@ -41,6 +43,8 @@ templates:
         description: Name of the user that booked the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
+      - name: EVENT_NAME
+        description: Workshop name
       - name: EVENT_DATE
         description: Session date
       - name: EVENT_TIME
@@ -55,6 +59,8 @@ templates:
         description: Name of the user that had their session cancelled
       - name: HOST_NAME
         description: Name of the host that cancelled the session
+      - name: EVENT_NAME
+        description: Workshop name
       - name: EVENT_DATE
         description: Session date
       - name: EVENT_TIME
@@ -67,6 +73,8 @@ templates:
         description: Name of the user that cancelled the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
+      - name: EVENT_NAME
+        description: Workshop name
       - name: EVENT_DATE
         description: Session date
       - name: EVENT_TIME
@@ -79,6 +87,8 @@ templates:
         description: Name of the user that cancelled the session
       - name: OTHER_USER
         description: Name of the user that had their session cancelled
+      - name: EVENT_NAME
+        description: Workshop name
       - name: EVENT_DATE
         description: Session date
       - name: EVENT_TIME

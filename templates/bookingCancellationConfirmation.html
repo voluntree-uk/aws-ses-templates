@@ -237,7 +237,15 @@ table, td { color: #000000; } #u_body a { color: #60ccca; text-decoration: under
       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 21px 0px 10px;font-family:'Montserrat',sans-serif;" align="left">
         
       <div style="padding-left: 1.5em; padding-right: 1.5em; font-size: 14px; line-height: 2.5; text-align: left; word-wrap: break-word;">
-        <p>You have successfully cancelled the session with <strong>{{ OTHER_USER }}</strong> on the <strong>{{EVENT_DATE}}</strong> at <strong>{{EVENT_TIME}}</strong>.</p>
+        <p>You have successfully cancelled the session with <strong>{{ OTHER_USER }}</strong>.</p>
+        <br>
+        <p>Workshop Details:</p>
+        <ul>
+          <li>Name: <strong>{{EVENT_NAME}}</strong></li>
+          <li>Date: <strong>{{EVENT_DATE}}</strong></li>
+          <li>Time: <strong>{{EVENT_TIME}}</strong></li>
+        </ul>
+        <p>We hope to see you again soon.</p>
         <br>
         <p>Best regards,</p>
         <p>Voluntree Team</p>
