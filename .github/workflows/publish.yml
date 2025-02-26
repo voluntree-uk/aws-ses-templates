@@ -10,7 +10,7 @@ jobs:
       - run: |
           git fetch --prune --unshallow --tags
       - name: Configure AWS Credentials Profile
-        uses: Fooji/create-aws-profile-action@v4
+        uses: Fooji/create-aws-profile-action@v4.0.0
         with:
           profile: voluntree
           region: eu-west-1
