@@ -1,0 +1,21 @@
+name: publish email templates
+on:
+  push:
+    branches: [ main ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git fetch --prune --unshallow --tags
+      - name: Configure AWS Credentials Profile
+        uses: Fooji/create-aws-profile-action@v4
+        with:
+          profile: voluntree
+          region: eu-west-1
+          key: ${{ secrets.AWS_SES_DEPLOY_ACCESS_KEY }}
+          secret: ${{ secrets.AWS_SES_DEPLOY_SECRET_ACCESS_KEY }}
+      - name: Run publish script
+        run: |
+          python3 register.py --aws-profile voluntree --aws-region eu-west-1 templates.yaml
