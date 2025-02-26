@@ -49,3 +49,19 @@ options:
                         An AWS region of the target account
 
 ```
+
+## Testing
+
+### Send Email
+
+```
+aws ses send-templated-email --cli-input-json {absolute-path}
+```
+
+Test payloads can be found in `test/` directory
+
+### Delete Template
+
+```
+aws ses delete-template --template-name {template-name}
+```

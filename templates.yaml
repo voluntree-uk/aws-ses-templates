@@ -35,6 +35,24 @@ templates:
         description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
+  - name: bookingConfirmationUserWithCalendar
+    subject: Thank you for booking a session with Voluntree
+    source: templates/bookingConfirmationUserWithCalendar.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that booked the session
+      - name: HOST_NAME
+        description: Name of the user that is hosting the session
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+      - name: CALENDAR_TARGET
+        description: Link to add calendar event
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
   - name: bookingConfirmationHost
     subject: New session booking for your workshop
     source: templates/bookingConfirmationHost.html
@@ -49,6 +67,24 @@ templates:
         description: Session date
       - name: EVENT_TIME
         description: Session time
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
+  - name: bookingConfirmationHostWithCalendar
+    subject: New session booking for your workshop
+    source: templates/bookingConfirmationHostWithCalendar.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that booked the session
+      - name: HOST_NAME
+        description: Name of the user that is hosting the session
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+      - name: CALENDAR_TARGET
+        description: Link to add calendar event
       - name: JOIN_TARGET
         description: Link to the online meeting session
   - name: bookingCancellationUser

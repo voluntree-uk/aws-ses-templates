@@ -1,0 +1,10 @@
+{
+  "Source":"No Reply <no-reply@voluntree.net>",
+  "Template":"bookingConfirmationUserWithCalendar",
+  "Destination": {
+    "ToAddresses": [
+      "info.voluntree@gmail.com"
+    ]
+  },
+  "TemplateData":"{\"USER_NAME\":\"Attendee\",\"HOST_NAME\":\"Host\",\"EVENT_NAME\":\"Test workshop\",\"EVENT_DATE\":\"2 July 2025\",\"EVENT_TIME\":\"12:35\",\"CALENDAR_TARGET\":\"https://calendar.google.com/calendar/render?action=TEMPLATE&text=Test%20workshop%20%7C%20Voluntree&dates=20241109T120000Z/20241109T130000Z&details=Join%20the%20workshop%3A%20https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_OTZkYzQ3MzktM2ZhYy00NjJlLWFiNWYtNzg1YzMxZDI1MGJm%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%252287d445a5-af79-40e0-a1c8-c0da3f39b58c%2522%252c%2522Oid%2522%253a%2522d124212d-35a4-4c4a-a75a-f0d51d7d1b5b%2522%257d&ctz=Europe/London\",\"JOIN_TARGET\":\"https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTZkYzQ3MzktM2ZhYy00NjJlLWFiNWYtNzg1YzMxZDI1MGJm%40thread.v2/0?context=%7b%22Tid%22%3a%2287d445a5-af79-40e0-a1c8-c0da3f39b58c%22%2c%22Oid%22%3a%22d124212d-35a4-4c4a-a75a-f0d51d7d1b5b%22%7d\"}"
+}
