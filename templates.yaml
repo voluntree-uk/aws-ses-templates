@@ -52,7 +52,7 @@ templates:
       - name: JOIN_TARGET
         description: Link to the online meeting session
   - name: bookingReminderUser
-    subject: Reminder: Your Voluntree Workshop is Today!
+    subject: Reminder - Your Voluntree Workshop is Today!
     source: templates/bookingReminderUser.html
     data:
       - name: USER_NAME
@@ -66,7 +66,7 @@ templates:
       - name: JOIN_TARGET
         description: Link to the online meeting session
   - name: bookingReminderHost
-    subject: Reminder: Your Voluntree Workshop is Today!
+    subject: Reminder - Your Voluntree Workshop is Today!
     source: templates/bookingReminderHost.html
     data:
       - name: HOST_NAME
