@@ -87,6 +87,34 @@ templates:
         description: Link to add calendar event
       - name: JOIN_TARGET
         description: Link to the online meeting session
+  - name: bookingReminderUser
+    subject: Reminder - Your Voluntree Workshop is Today!
+    source: templates/bookingReminderUser.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that booked the session
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
+  - name: bookingReminderHost
+    subject: Reminder - Your Voluntree Workshop is Today!
+    source: templates/bookingReminderHost.html
+    data:
+      - name: HOST_NAME
+        description: Name of the workshop host
+      - name: EVENT_NAME
+        description: Workshop name
+      - name: EVENT_DATE
+        description: Session date
+      - name: EVENT_TIME
+        description: Session time
+      - name: JOIN_TARGET
+        description: Link to the online meeting session
   - name: bookingCancellationUser
     subject: Your session has been cancelled
     source: templates/bookingCancellationUser.html
