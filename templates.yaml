@@ -19,6 +19,14 @@ templates:
         description: Name of the user that created the workshop
       - name: EVENT_NAME
         description: Workshop name
+  - name: workshopShowInterest
+    subject: Someone's Interested in Your Workshop!
+    source: templates/workshopShowInterest.html
+    data:
+      - name: HOST_NAME
+        description: Name of the user that hosts the workshop
+      - name: EVENT_NAME
+        description: Workshop name
   - name: bookingConfirmationUser
     subject: Thank you for booking a session with Voluntree
     source: templates/bookingConfirmationUser.html
