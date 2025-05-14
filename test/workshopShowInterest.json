@@ -1,0 +1,10 @@
+{
+  "Source":"No Reply <no-reply@voluntree.net>",
+  "Template":"workshopShowInterest",
+  "Destination": {
+    "ToAddresses": [
+      "info.voluntree@gmail.com"
+    ]
+  },
+  "TemplateData":"{\"HOST_NAME\":\"Host\",\"EVENT_NAME\":\"Test workshop\"}"
+}
