@@ -11,6 +11,12 @@ templates:
     data:
       - name: PASSWORD_RESET_LINK
         description: A URL to reset password portal
+  - name: welcomeUser
+    subject: Welcome to Voluntree!
+    source: templates/welcomeUser.html
+    data:
+      - name: USER_NAME
+        description: Name of the user that completed onboarding
   - name: workshopCreationConfirmation
     subject: Thank you for creating a workshop with Voluntree
     source: templates/workshopCreationConfirmation.html
