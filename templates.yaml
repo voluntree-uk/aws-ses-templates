@@ -33,22 +33,6 @@ templates:
         description: Name of the user that hosts the workshop
       - name: EVENT_NAME
         description: Workshop name
-  - name: bookingConfirmationUser
-    subject: Thank you for booking a session with Voluntree
-    source: templates/bookingConfirmationUser.html
-    data:
-      - name: USER_NAME
-        description: Name of the user that booked the session
-      - name: HOST_NAME
-        description: Name of the user that is hosting the session
-      - name: EVENT_NAME
-        description: Workshop name
-      - name: EVENT_DATE
-        description: Session date
-      - name: EVENT_TIME
-        description: Session time
-      - name: JOIN_TARGET
-        description: Link to the online meeting session
   - name: bookingConfirmationUserWithCalendar
     subject: Thank you for booking a session with Voluntree
     source: templates/bookingConfirmationUserWithCalendar.html
@@ -65,22 +49,6 @@ templates:
         description: Session time
       - name: CALENDAR_TARGET
         description: Link to add calendar event
-      - name: JOIN_TARGET
-        description: Link to the online meeting session
-  - name: bookingConfirmationHost
-    subject: New session booking for your workshop
-    source: templates/bookingConfirmationHost.html
-    data:
-      - name: USER_NAME
-        description: Name of the user that booked the session
-      - name: HOST_NAME
-        description: Name of the user that is hosting the session
-      - name: EVENT_NAME
-        description: Workshop name
-      - name: EVENT_DATE
-        description: Session date
-      - name: EVENT_TIME
-        description: Session time
       - name: JOIN_TARGET
         description: Link to the online meeting session
   - name: bookingConfirmationHostWithCalendar
@@ -135,8 +103,6 @@ templates:
     data:
       - name: USER_NAME
         description: Name of the user that had their session cancelled
-      - name: HOST_NAME
-        description: Name of the host that cancelled the session
       - name: EVENT_NAME
         description: Workshop name
       - name: EVENT_DATE
@@ -163,8 +129,6 @@ templates:
     data:
       - name: CANCELLING_USER
         description: Name of the user that cancelled the session
-      - name: OTHER_USER
-        description: Name of the user that had their session cancelled
       - name: EVENT_NAME
         description: Workshop name
       - name: EVENT_DATE
