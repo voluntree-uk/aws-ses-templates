@@ -113,8 +113,6 @@ templates:
     subject: A session was cancelled for your workshop
     source: templates/bookingCancellationHost.html
     data:
-      - name: USER_NAME
-        description: Name of the user that cancelled the session
       - name: HOST_NAME
         description: Name of the user that is hosting the session
       - name: EVENT_NAME
@@ -157,3 +155,15 @@ templates:
         description: Workshop name
       - name: AWARD_AMOUNT
         description: Amount of points awarded
+  - name: contactUs
+    subject: New contact us message from Voluntree platform
+    source: templates/contactUs.html
+    data:
+      - name: NAME
+        description: Name of the user that sent the message
+      - name: EMAIL
+        description: Email of the user that sent the message
+      - name: PURPOSE
+        description: Purpose of the contact message
+      - name: MESSAGE
+        description: Content of the message sent by the user
